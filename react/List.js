@@ -36,11 +36,6 @@ const articles = [
     }
 ]
 
-
-function showArticle(id) {
-    ReactDOM.render(<Article id={id} />, document.getElementById("current"))
-}
-
 const List = () => {
     const ListButton = ({ id }) => {
         return (
@@ -71,6 +66,10 @@ const List = () => {
             </div>
         </div>
     )
+}
+
+function showArticle(id) {
+    ReactDOM.render(<Article id={id} />, document.getElementById("current"))
 }
 
 const Article = ({ id }) => {
